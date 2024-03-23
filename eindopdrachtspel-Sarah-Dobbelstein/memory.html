@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spel</title>
+    <script src="speljavascript.js" defer></script>
+    <link rel="stylesheet" href="cssspel.css">
+
+</head>
+<body>
+    <h1 class="title">memory</h1>
+
+    <div class="memoryenscore">
+        <div class="memorybord">
+            <section class="fotoboxtop">
+                <img id="kaart1" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart2" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart3" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart4" class="kaart" src="images/kaart.png" alt="kaart"> 
+            </section>
+
+            <section class="fotobox1">
+                <img id="kaart5" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart6" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart7" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart8" class="kaart" src="images/kaart.png" alt="kaart"> 
+            </section>
+
+            <section class="fotobox1">
+                <img id="kaart9" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart10" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart11" class="kaart" src="images/kaart.png" alt="kaart"> 
+                <img id="kaart12" class="kaart" src="images/kaart.png" alt="kaart"> 
+            </section>
+        </div>
+
+        <div class="scorebord" id="scorebord">
+            <ul>
+                <li class="titelscore">Score Bord</li>
+                <li>Tijd spel: <span id="aantaltijdveld">0</span> sec</li>
+                <li>Gespeelde zetten: <span id="aantalzettenveld">0</span></li>
+                <li>Matches: <span id="aantalmatchesveld">0</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--audio komt van, https://pixabay.com/nl/sound-effects/search/point/-->
+    <audio id="audiomatch" controls>
+        <source src="audio/cute-level-up-3-189853.mp3" type="audio/mpeg">
+      </audio>
+
+    <!--audio komt van, https://pixabay.com/nl/sound-effects/search/error/-->
+    <audio id="audiogeenmatch" controls>
+        <source src="audio/error-2-36058.mp3" type="audio/mpeg">
+      </audio>
+      
+      <button id="reset">Reset game</button>
+</body>
+</html>
